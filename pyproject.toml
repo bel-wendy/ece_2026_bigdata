@@ -1,5 +1,5 @@
 [project]
-name = "ece-bigdata-lab"
+name = "ece_2026_bigdata"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -7,10 +7,13 @@ authors = [
     { name = "bel-wendy", email = "wendybelinga64@gmail.com" }
 ]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "faker>=40.37.0",
+]
 
 [project.scripts]
-ece-bigdata-lab = "ece_bigdata_lab:main"
+dataset-users = "ece_2026_bigdata.dataset_users:main"
+dataset-orders = "ece_2026_bigdata.dataset_orders:main"
 
 [build-system]
 requires = ["uv_build>=0.9.27,<0.10.0"]
